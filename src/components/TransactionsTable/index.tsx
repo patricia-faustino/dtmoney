@@ -1,26 +1,12 @@
-import { useEffect, useState } from "react";
-import styled from "styled-components";
-import { api } from "../../services/api";
+import { useTransactions } from "../../hooks/useTransactions";
 import { Container } from "./styles";
 
-interface Transaction {
-  id: number;
-  title: string;
-  amount: number;
-  type: string;
-  category: string;
-  createdAt: string;
-}
-
 export function TransactionsTable() {
-  const [transactions, setTransactions] = useState<Transaction[]>([]);
-
-  useEffect(() => {
-    api
-      .get("transactions")
-      .then((response) => setTransactions(response.data.transactions));
-  }, []);
-
+  const { transactions } = useTransactions();
+  
+  //prop drilling: dados sendo repassados por props de avo/pai/filho
+  //compartilhar informações/ dados(estado) mais complexos: utilizar contexto
+  //compartilhamento de dados na aplicação
   return (
     <Container>
       <table>
