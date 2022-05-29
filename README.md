@@ -10,3 +10,10 @@
 - [x] Cadastrar transações
 - [x] Summary dinâmico de transações  
 
+Tecnologias
+As seguintes ferramentas foram usadas na construção do projeto
+
+- ReactJS
+- TypeScript
+- Styled Components
+- Miragejs
