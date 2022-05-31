@@ -10,7 +10,8 @@
 - [x] Cadastrar transações
 - [x] Summary dinâmico de transações  
 
-Tecnologias
+Tecnologias/Bibliotecas:
+
 As seguintes ferramentas foram usadas na construção do projeto
 
 - ReactJS
